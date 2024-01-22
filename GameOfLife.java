@@ -69,7 +69,7 @@ public class GameOfLife {
 		int cols = Integer.parseInt(in.readLine());
 		
 		int[][] board = new int[rows + 2][cols + 2];
-		for (int i=1; i<=rows; i++) {
+		for (int i=0; i<=rows; i++) {
 			String line=in.readLine();
 			if (line!=null) {
 				for (int j=1; j<=line.length(); j++) {
