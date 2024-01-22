@@ -41,7 +41,7 @@ public class GameOfLife {
 	public static void test3(String fileName, int Ngen) {
 		int[][] board = read(fileName);
 		for (int gen = 0; gen < Ngen; gen++) {
-		System.out.println("Generation" + gen + ":");
+		System.out.println("Generation " + gen + ":");
 			print(board);
 	           board = evolve(board);
 		}
@@ -69,7 +69,7 @@ public class GameOfLife {
 		int cols = Integer.parseInt(in.readLine());
 		
 		int[][] board = new int[rows + 2][cols + 2];
-		for (int i=0; i<=rows; i++) {
+		for (int i=1; i<=rows; i++) {
 			String line=in.readLine();
 			if (line!=null) {
 				for (int j=1; j<=line.length(); j++) {
